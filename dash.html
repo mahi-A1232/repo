@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move to Another HTML File on Submit</title>
+</head>
+<body>
+
+<h1>Click the button to move to another HTML file</h1>
+
+<form onsubmit="moveToAnotherPage()">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  function moveToAnotherPage() {
+    // Specify the URL of the HTML file you want to navigate to
+    var url = "WT/hi.html";
+    
+    // Navigate to the specified URL
+    window.location.href = url;
+    
+    // Prevent the form from being submitted in the usual way
+    return false;
+  }
+</script>
+
+</body>
+</html>
+
